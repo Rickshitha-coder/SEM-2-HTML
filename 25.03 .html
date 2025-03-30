@@ -1,0 +1,127 @@
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+<title>Transition</title>
+<style>
+img{
+animation:bounce;
+animation-duration:5s;
+animation-iteration-count:2;
+animation-delay:3s;
+animation-timing-function:ease-out;
+animation-direction:reverse; /* normal, reverse, alternate, alternate-reverse*/
+animation-fill-mode:forwards;/none,forwards,backwards,both/
+}
+@keyframes bounce
+{
+0%{transform:translateX(0) rotate(90deg) scale(1) }
+50%{transform:translateX(50 px) rotate(180deg) scale(2) }
+100%{transform:translateX(0) rotate(360deg) scale(-2)}
+}
+</style>
+</head>
+<body>
+<h2>2D Transition</h2>
+<img src="https://5.imimg.com/data5/ANDROID/Default/2024/1/377195808/PQ/PD/VB/23764894/product-jpeg.jpg" width="200px" height="200px">
+</body>
+</html>
+-->
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+<title>Transition</title>
+
+<style>
+button{
+color:blue;
+background-color:yellow;
+transition:background-color 1s, transform 1s;
+}
+button:focus
+{
+background-color:red;
+opacity:0.3;
+transform:rotate(360deg);
+}
+</style>
+</head>
+<body>
+<h2>2D Transition</h2>
+<div>
+<p> An example for transition method</p>
+<button type="button">Click me!!!!</button>
+</div>
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Transform</title>
+
+<style>
+div{
+width:200px;
+height:100px;
+background-color:coral;
+border:2px solid blue;
+transform:translate(550px,250px);  /50px-right and 100px-down/
+}
+
+#d1
+{
+transform:rotate(150deg); 
+background-color:yellow;
+
+}
+
+#d2{
+transform:scaleY(0.3);  /*2- inr(+) the width by 2 times the originl, 3 inr(+) the height 3 time the original  x- width y-height*/
+background-color:green;
+}
+
+#d3
+{
+transform:skew(10deg,30deg);  /*x-left y-right*/
+background-color:red;
+}
+
+#d4
+{
+transform:matrix(1,0.5,0.5,1,150,20);  /*scaleX,skewY,skewX,scaleY,translateX,translateY */
+background-color:cadetblue;
+}
+
+</style>
+
+</head>
+<body>
+<h2>2D Transformation</h2>
+<div>
+<p>Translate method moves the element from its current position</p>
+</div>
+<br>
+
+<div id="d1">
+<p>Rotate methos rotate the element to the clock wise or anti-clockwise direction</p>
+</div>
+<br>
+
+<div id="d2">
+<p>Example for scale</p>
+</div>
+<br>
+
+<div id="d3">
+<p>Example for skew</p>
+</div>
+<br>
+
+<div id="d4">
+<p>Example for matrix</p>
+</div>
+</body>
+</html>

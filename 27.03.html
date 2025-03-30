@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<title>Grid Layout</title>
+<head>
+<style>
+.grid-container{
+display:grid;
+/*grid-template-rows:200px;*/
+grid-template-columns:300px 300px;
+background-color:#cbb0c6;
+
+/*justify-content:space-between;
+align-content:end;
+place-content:space-between end;*/
+gap:20px;
+
+}
+.grid-container>div{
+background-color:Aqua;
+border:2px solid black;
+text-align:center;
+
+}
+.grid-item{
+grid-row:1 /span 2;}
+</style>
+</head>
+<body>
+<h1 style="text-align:center;">CSS Grid Layout</h1><hr>
+<div class="grid-container">
+
+<div class="grid-item">
+<p>The Grid Layout Module offers a grid-based layout system, with rows and columns.
+The Grid Layout Module allows developers to easily create complex web layouts.
+The Grid Layout Module makes it easier to design a responsive layout structure, without using float or positioning.
+The CSS grid properties are supported in all modern browsers.</p></div>
+
+<div>
+<h2>CSS GRID PROPERTIES</h2>
+<p><b>align-content</b>
+Vertically aligns the whole grid inside the container (when total grid size is smaller than container</p>
+</div>
+<div>
+<p><b>align-items</b>
+Aligns content in a grid item along the column axis</p>
+</div>
+<div >
+<p><b>grid-auto-columns</b>
+Specifies a default column size</p>
+</div>
+<div>
+<p><b>align-self</b>
+Aligns the content for a specific grid item along the column axis</p>
+</div>
+<div>
+<p><b>gap</b>
+A shorthand property for the row-gap and the column-gap properties</p>
+</div>
+<div>
+<p><b>grid-template-columns</b>
+Specifies the size of the columns, and how many columns in a grid layout</p>
+</div>
+<div >
+<p><b>grid-column-start</b>
+Specifies where to start the grid item</p>
+</div>
+<div>
+<p><b>grid-column-end</b>
+Specifies where to end the grid item</p>
+</div>
+<div>
+<p><b>grid-row</b>
+A shorthand property for the grid-row-start and the grid-row-end properties</p>
+</div>
+<div>
+<p><b>grid-row-end</b>
+Specifies where to end the grid item</p>
+</div>
+<div>
+<p><b>grid-row-start</b>
+Specifies where to start the grid item</p>
+</div>
+<div>
+<p><b>grid-template-rows</b>
+Specifies the size of the rows in a grid layout</p>
+</div>
+<div>
+<p><b>justify-content</b>
+Horizontally aligns the whole grid inside the container (when total grid size is smaller than container)</p>
+</div><div>
+<p><b>justify-self</b>
+Aligns the content for a specific grid item along the row axis</p>
+</div>
+
+</div>
+</body>
+</html>

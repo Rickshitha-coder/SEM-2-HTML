@@ -1,0 +1,17 @@
+a:link{
+color:red;
+display:inline-block;
+text-decoration-style:wavy;
+background-color:yellow;
+border:5px solid blue;
+padding:15px;
+}
+a:visited{
+	color:green;
+}
+a:hover{
+	color:blue;
+}
+a:active{
+	color:orange;
+}

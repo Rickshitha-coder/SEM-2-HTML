@@ -1,0 +1,81 @@
+<!--
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>CSS images</title>
+<style>
+h2{
+text-align:center;
+}
+#img{
+overflow:auto;
+clip-path:circle(50%);   /*semicircle->(50% to right);*/
+  shape-outside: circle(55%);
+  float:right;
+}
+#img2{
+clip-path:ellipse(40% 60%);
+shape-outside:ellipse(20%,30%);
+shape-outside: ellipse(55% 40%);
+  float:left;
+}
+#img3{
+float:left;
+clip-path:polygon(50% 0%,100% 50%,50% 100%,0% 50%); /*top topcenter,right rghtcenter,bottom bottomcenter;left leftcenter;*/
+}
+div{
+border:2px solid red;
+width:400px;
+height:300px;
+overflow:auto;}
+
+</style>
+</head>
+<body>
+<h2>KERALA GOD'S OWN COUNTRY</h2>
+<div>
+<img id="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlnwyKmSN-ihpvpxDYNfNNxq3OcB_ngvFDGQ&s" width="200" height="200" >
+<p>Sabarimala Temple, located in the Periyar Tiger Reserve in the Western Ghats of Pathanamthitta district, Kerala, is one of the most revered and significant pilgrimage sites in India. Dedicated to Lord Ayyappa, the temple attracts millions of devotees from all over the world, especially during the annual Mandalam-Makaravilakku season. Nestled amidst dense forests and rugged hills, Sabarimala offers not only a spiritual journey but also a captivating experience of Kerala's natural beauty.
+</p>
+</div>
+<div>
+<img id="img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp7D3XDZaHvjqqe2hjZxoIXqQIaeIbVWz74w&s" width="300" height="200">
+<p><b>The Journey and Pilgrimage</b><br>
+The pilgrimage to Sabarimala is a test of faith and endurance. The journey begins with a 41-day vratham (austerity period) during which devotees follow strict practices, including abstinence, vegetarianism, and daily prayers. Wearing a black or blue attire, the pilgrims carry the traditional irumudi kettu, a sacred bundle containing offerings, on their heads. Along the way, pilgrims pass through significant landmarks such as Neelimala, Appachimedu, and the Saramkuthi before reaching the sacred 18 steps (Pathinettampadi) that lead to the temple. These steps symbolize the 18 hills surrounding Sabarimala and hold great spiritual importance.</p>
+</div>
+<div>
+<img id="img3" src="https://giriaus.com/cdn/shop/articles/sabarimala-ayyappan.jpg?v=1667542788" width="200" height="200">
+<p><b>Natural Beauty and Ecological Significance</b><br>
+Sabarimala is situated within the Periyar Tiger Reserve, an area rich in biodiversity and natural beauty. The dense forests, diverse wildlife, and pristine rivers enhance the pilgrimage experience, providing a serene and picturesque environment. The Pamba River, considered sacred by the devotees, adds to the spiritual ambiance of the pilgrimage.
+</p>
+</div>
+</body>
+</html>
+-->
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Image Cover</title>
+<style>
+img{
+object-fit:contain;
+object-position:20% 100%;
+}
+.il {
+    -webkit-mask-image: url('https://png.pngtree.com/png-vector/20210606/ourmid/pngtree-red-goal-text-design-with-football-vector-illustration-png-image_3427062.jpg');
+    mask-image: url('https://png.pngtree.com/png-vector/20210606/ourmid/pngtree-red-goal-text-design-with-football-vector-illustration-png-image_3427062.jpg');
+    mask-repeat: no-repeat;
+  }
+</style>
+
+
+</head>
+<body>
+<h2>Images</h2>
+<div class="il">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH7h4SwVoQ3Qurt8Ec1cjrNQYiAROcsZnKPQ&s" width="300px" height="200px">
+</div>
+</body>
+</html>
