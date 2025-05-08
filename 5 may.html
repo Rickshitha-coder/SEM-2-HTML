@@ -1,0 +1,143 @@
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables Demo</title>
+    <style>
+        /* Global Variables */
+        :root {
+            --main-color: royalblue;
+           
+            --padding: 15px;
+			
+        }
+
+        body {
+            background-color: var(--main-color);
+            color: white;
+            
+            padding: var(--padding);
+        }
+
+        .section1 {
+            /* Local override of global variable */
+            --main-color: darkgreen;
+            background-color: var(--main-color);
+            padding: var(--padding);
+			font-size:var(--fontsize);
+        }
+
+        .section2 {
+            background-color: var(--main-color); /* uses global unless overridden */
+            font-size: 18px;
+        }
+		button{
+		--buttoncolor:#00ff2e;
+		--buttonborder:#ff0000;
+		background-color:var(--buttoncolor);
+		border:2px solid var(--buttonborder);}
+		@media screen and (min-width: 450px){
+		.section1{
+		--fontsize:90px;}
+		}
+    </style>
+</head>
+<body>
+    <h2>Global and Local CSS Variables</h2>
+
+    <div class="section1">
+        <p>This is Section 1 – using a *local* variable override (dark green).</p>
+    </div>
+
+    <br>
+
+    <div class="section2">
+        <p>This is Section 2 – using the *global* variable (royal blue).</p>
+    </div>
+	<button>YES</button>
+	<button>NO</button>
+</body>
+</html>
+
+-->
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Media Query Example</title>
+<style>
+    body {
+        background-color: red; /* Default background */
+		animation:animate 2s infinite;
+    }
+
+    /* Media query for screen widths 0px and above (basically all) */
+    @media screen and (max-width: 620px) {
+        body {
+            background-color: gold;
+        }
+    }
+	@keyframes animate{
+	from{background-color:red;}
+	to{background-color:black;}
+	}
+	
+	
+</style>
+</head>
+<body>
+    <h2>Global and Local CSS Variables</h2>
+
+    <div class="section1">
+        <p>This is Section 1 – using a local variable override (dark green).</p>
+    </div>
+
+    <br>
+
+    <div class="section2">
+        <p>This is Section 2 – using the global variable (royal blue).</p>
+    </div>
+
+    <button>YES</button>
+    <button>NO</button>
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Media Query Example</title>
+<style>
+.grid-container{
+display:grid;
+grid-template-columns: repeat(4, 1fr);
+background-color:red;
+padding:10px;
+animation:gridframe 2s infinite;
+}
+@keyframes gridframe{
+0%{grid-template-columns:repeat(4, 1fr);}
+50%{grid-template-columns:100px 1fr 1fr 1fr);}
+100%{grid-template-columns:repeat(4, 1fr);}
+}
+@media screen  and (max-width:620px){
+div{
+display:none;}
+}
+</style>
+</head>
+<body>
+<h3>ANIMATED GRID</h3>
+<div class="grid-container">
+
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+</div>
+</body>
+</html>
