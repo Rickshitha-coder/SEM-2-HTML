@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Card Exmaple</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="card bg-danger text-white" style="width:300px">
+		<div class="card-header bg-primary">Header</div>
+		<img src="https://www.w3schools.com/bootstrap5/img_avatar1.png" 
+		width="100px" height="100px" class="card-img-top" alt="card-image">
+		  <div class="card-img-overlay">
+		<div class="card-body bg-success">
+			<h4 class="card-title bg-warning text-success">Card title</h4>
+			<p class="card-text">Some example text. Some example text.</p>
+			<a href="#" class="btn btn-success">Click to know more!!!</a>
+		</div>
+		</div>
+		<div class="card-footer">Footer</div>
+	</div>
+</div>
+<br><br>
+<hr>
+<div class="container mt-3">
+  <h2>Cards with Contextual Classes</h2>
+  <p>To add a background color to the card, use contextual classes 
+  (.bg-primary, .bg-success, .bg-info, .bg-warning, .bg-danger, .bg-secondary, .bg-dark and .bg-light.)</p>
+  <div class="card">
+    <div class="card-body">Basic card</div>
+  </div>
+  <br>
+  <div class="card bg-primary text-white">
+    <div class="card-body">Primary card</div>
+  </div>
+  <br>
+  <div class="card bg-success text-white">
+    <div class="card-body">Success card</div>
+  </div>
+  <br>
+  <div class="card bg-info text-white">
+    <div class="card-body">Info card</div>
+  </div>
+  <br>
+  <div class="card bg-warning text-white">
+    <div class="card-body">Warning card</div>
+  </div>
+  <br>
+  <div class="card bg-danger text-white">
+    <div class="card-body">Danger card</div>
+  </div>
+  <br>
+  <div class="card bg-secondary text-white">
+    <div class="card-body">Secondary card</div>
+  </div>
+  <br>
+  <div class="card bg-dark text-white">
+    <div class="card-body">Dark card</div>
+  </div>
+  <br>
+  <div class="card bg-light text-dark">
+    <div class="card-body">Light card</div>
+  </div>
+</div>
+<bR><br>
+<hr>
+<div class="container mt-3">
+  <h2>Card Image</h2>
+  <p>Image at the top (card-img-top):</p>
+  <div class="card" style="width:400px">
+    <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">John Doe</h4>
+      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+  <br>
+  
+  <p>Image at the bottom (card-img-bottom):</p>
+  <div class="card" style="width:400px">
+    <div class="card-body">
+      <h4 class="card-title">Jane Doe</h4>
+      <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+    <img class="card-img-bottom" src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Card image" style="width:100%">
+  </div>
+</div>
+<br><br>
+<hR>
+<div class="container">
+<h2>List Groups</h2>
+<p>To create a basic list group, use an ul tag element with class .list-group, and <li> elements with class .list-group-item:</p>
+<ul class="list-group">
+  <li class="list-group-item active">First item<span class="badge">10%</span></li>
+  <li class="list-group-item disabled">Second item<span class="badge">20%</span></li>
+  <li class="list-group-item">Third item<span class="badge">30%</span></li>
+</ul>
+<h2>List Groups Contexual Class</h2>
+<p>The classes for coloring list-items are: .list-group-item-success, list-group-item-secondary, list-group-item-info, 
+list-group-item-warning, .list-group-item-danger, .list-group-item-primary, list-group-item-dark and list-group-item-light,:</p>
+<ul class="list-group">
+  <li class="list-group-item list-group-item-success">Success item</li>
+  <li class="list-group-item list-group-item-secondary">Secondary item</li>
+  <li class="list-group-item list-group-item-info">Info item</li>
+  <li class="list-group-item list-group-item-warning">Warning item</li>
+  <li class="list-group-item list-group-item-danger">Danger item</li>
+  <li class="list-group-item list-group-item-primary">Primary item</li>
+  <li class="list-group-item list-group-item-dark">Dark item</li>
+  <li class="list-group-item list-group-item-light">Light item</li>
+</ul>
+<div class="list-group">
+<h2 class="list-group-item-heading">Link items with Contextual Classes</h2>
+  <a href="#" class="list-group-item list-group-item-action">Action item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-success">Success item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Secondary item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-info">Info item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Warning item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Danger item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Primary item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Dark item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-light">Light item</a>
+</div>
+</div>
+<br><br>
+<hr>
+<h2>Nav Bar</h2>
+ <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
+  <p>The navbar-expand-xxl|xl|lg|md|sm class determines when the navbar should stack vertically 
+  (on xxlarge, extra large, large, medium or small screens).</p>
+<nav class="navbar navbar-default"><!-- navbar-fixed-top or bottom-->
+	<div class="container-fluid">
+		<div class="navbar-header"><!--header means brand name-->
+			<a href="#" class="navbar-brand">Shoe botique</a>
+		</div>
+		<ul class="nav navbar-nav navbar-right">
+		<li class="active"><a href="#">Home</a></li>
+		<li ><a href="#">Offers</a></li>
+		<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Men<span class="caret"></a>
+			<ul class="dropdown-menu">
+			<li><a href="#" class="dropdown-item">Shirts</a></li>
+			<li><a href="#" class="dropdown-item">Shirts</a></li>
+			<li><a href="#" class="dropdown-item">Shirts</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Women</a></li>
+		</ul>
+		<p class="navbar-text">Navigar bar text</p>
+		<button class="btn navbar-btn">Close</button>
+	</div>
+</nav>
+<br>
+<br><hr>
+<nav class="navbar navbar-default">
+	<div class="container">
+		<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Navbar">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="#">Shoe botique</a>
+	</div>
+	<div class="collapse navbar-collapse" id="Navbar">
+		<ul class="nav navbar-nav">
+		   <li class="active"><a href="#">Home</a></li>
+		   <li><a href="#">Men</a></li>
+		   <li><a href="#">Women</a></li>
+		 </ul>
+	</div>
+	</div>
+</nav>
+<br>
+<br><hr>
+<h2>Pagination</h2>
+<p>If you have a web site with lots of pages, you may wish to add some sort of pagination to each page.</p>
+<ul class="pagination">
+<li class="active"><a href="#">Pervious</a></li>
+<li><a href="#">1</a></li>
+<li><a href="#">2</a></li>
+<li><a href="#">3</a></li>
+<li class="disabled"><a href="#">Next</a></li>
+</ul><br>
+<ul class="pagination pagination-lg">
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+</ul>
+<br>
+<ul class="pagination pagination-sm">
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+</ul>
+<br><br>
+<hr>
+ <h2>Breadcrumbs</h2>
+  <p>The .breadcrumb class indicates the current page's location within a navigational hierarchy:</p>                  
+  <ul class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Service</a></li>
+    <li class="active">Contact</li>        
+  </ul>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+  span {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin: 6px;
+    background-color: #555;
+  }
+  </style>
+</head>
+<body>
+
+<div class="container">
+	<h1 style="text-align:center;">Spacing Utilities</h1>
+  <p>Set the spacing of an element with the {property}{sides}-{breakpoint}-{size} classes. Omit breakpoint if you want the padding or margin to work on all screen sizes.</p>
+  <div class="pt-4 bg-warning">I only have a top padding (24px)</div>
+  <div class="p-5 mt-3 bg-success">I have a padding on all sides (48px) and margin top (16px)</div>
+  <div class="m-2 pb-5 bg-info">I have a margin on all sides (48px) and a bottom padding (48px)</div>
+	 <hr>
+	 <h1 style="text-align:center;">Shadows</h1>
+  <p>Use the shadow- classes to to add shadows to an element:</p>
+  <div class="shadow-none p-4 mb-4 bg-white">No shadow</div>
+  <div class="shadow-sm p-4 mb-5 bg-white">Small shadow</div>
+  <div class="shadow p-4 mb-5 bg-white">Default shadow</div>
+  <div class="shadow-lg p-4 mb-5 bg-white">Large shadow</div>
+	<hr>
+	<h1>Vertical Align</h1>
+  <p>Change the alignment of elements with the  <span class="align-middle">align classes </span>(only works on inline, inline-block, inline-table and table cell elements):</p>
+  <span class="align-baseline">baseline</span>
+  <span class="align-top">top</span>
+  <span class="align-middle">middle</span>
+  <span class="align-bottom">bottom</span>
+  <span class="align-text-top">text-top</span> <!-- other than all go in top-->
+  <span class="align-text-bottom">text-bottom</span>  <!-- other than all go in bottom-->
+  <p style="font-sze;20px;">Alignment 
+  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" class="align-middle" alt="bootstrap" style="width:20%; height:20%;">
+  </p>
+  
+ <hr>
+ 
+	<h2>Borders</h2>
+  <p>Use the border classes to add or remove borders from an element:</p> 
+
+  <div class="border rounded">defualt</div>
+  <div class=" m-3  border border-dark border border-0">NO border</div>
+  <div class=" m-3 border border-danger border border-top-0">no top borber</div>
+  <div class=" m-3 border border-primary borber border-right-0">no right borber</div>
+  <div class=" m-3 border border-secondary border border-bottom-0">no bottom border</div>
+  <div class=" m-3 border border-danger border border-left-0">no left borber</div>
+  <div class=" m-3 border-success  border-top">border top</div>
+  <div class=" m-3 border-dark border-right">border right</div>
+  <div class=" m-3 border-dark  border-bottom">borber bottom</div>
+  <div class=" m-3 border-dark border-left">bottom left</div>
+<hr>
+   <h2>Borders</h2>
+  <p>Round the corner of an element with the rounded classes:</p> 
+  <span class="rounded"></span>
+  <span class="rounded-top"></span>
+  <span class="rounded-right"></span>
+  <span class="rounded-bottom"></span>
+  <span class="rounded-left"></span>
+  <span class="rounded-circle"></span>
+  <span class="rounded-pill" style="width:130px"></span>
+  <span class="rounded-0"></span>
+  <span class="rounded-1"></span>
+  <span class="rounded-2"></span>
+  <span class="rounded-3"></span>
+  <span class="rounded-4"></span>
+  <span class="rounded-5"></span>
+<hr>
+	<h2>Float</h2>
+  <p>Float an element to the right with the .float-end class or to the left with .float-start, and clear floats with the .clearfix class.</p> 
+    <div class="float-left">Float left</div>
+    <div class="float-right">Float right</div><br><BR><hr>
+
+
+    <h2>Responsive Floats</h2>
+  <p>Float an element to the left or to the right depending on screen width, with the responsive float classes .float-*-left|right (where * is sm, md, lg, xl or xxl).</p>
+  <p>Resize the browser window to see the effect.</p> 
+  
+    <div class="float-sm-right">Float right on small screens or wider</div><br>
+    <div class="float-md-right">Float right on medium screens or wider</div><br>
+    <div class="float-lg-right">Float right on large screens or wider</div><br>
+    <div class="float-xl-right">Float right on extra large screens or wider</div><br>
+    <div class="float-xxl-right">Float right on XXL screens or wider</div><br>
+    <div class="float-none">Float none</div>
+<hr>
+	<h2>Horizontal Centering</h2>
+  <p>Center an element with the .mx-auto class:</p>
+  <div class="mx-auto bg-warning" style="width:150px">Centered</div>
+<hr>
+	<h2>Width Utilities</h2>
+  <p>Set the width of an element with the w-* classes:</p>
+  <div class="w-25 m-2 bg-warning">Width 25%</div>
+  <div class="w-50 m-2 bg-warning">Width 50%</div>
+  <div class="w-75 m-2 bg-warning">Width 75%</div>
+  <div class="w-100 m-2 bg-warning">Width 100%</div>
+  <div class="w-auto m-2 bg-warning">Auto Width</div>
+  <div class="mw-100 m-2 bg-warning">Max Width 100%</div>
+<hr>
+<h2>Height Utilities</h2>
+  <p>Set the height of an element with the h-* classes:</p>
+  <div style="height: 200px; background-color: rgba(255,0,0,0.1);">
+    <div class="h-25 m-2 bg-warning">Height 25%</div>
+    <div class="h-50 m-2 bg-warning">Height 50%</div>
+    <div class="h-75 m-2 bg-warning">Height 75%</div>
+    <div class="h-100 m-2 bg-warning">Height 100%</div>
+    <div class="h-auto m-2 bg-warning">Auto Height</div>
+    <div class="mh-100 m-2 bg-warning">Max Height 100%</div>
+</div>
+  
+  
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+</html>

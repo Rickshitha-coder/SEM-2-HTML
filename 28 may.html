@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container mt-3">
+  <h2>Button Styles</h2>
+  <button type="button" class="btn">Basic</button>
+  <button type="button" class="btn btn-primary">Primary</button>
+  <button type="button" class="btn btn-secondary">Secondary</button>
+  <button type="button" class="btn btn-success">Success</button>
+  <button type="button" class="btn btn-info">Info</button>
+  <button type="button" class="btn btn-warning">Warning</button>
+  <button type="button" class="btn btn-danger">Danger</button>
+  <button type="button" class="btn btn-dark">Dark</button>
+  <button type="button" class="btn btn-light">Light</button>
+  <button type="button" class="btn btn-link">Link</button>      
+</div>
+<br><br>
+<hr>
+<div class="container mt-3">
+  <h2>Button Sizes</h2>
+  <button type="button" class="btn btn-primary btn-lg">Large</button>
+  <button type="button" class="btn btn-primary btn-md">Default</button>    
+  <button type="button" class="btn btn-primary btn-sm">Small</button>
+</div>
+<br><br>
+<hr>
+<div class="container mt-3">
+  <h2>Button Outline</h2>
+  <button type="button" class="btn btn-outline-primary">Primary</button>
+  <button type="button" class="btn btn-outline-secondary">Secondary</button>
+  <button type="button" class="btn btn-outline-success">Success</button>
+  <button type="button" class="btn btn-outline-info">Info</button>
+  <button type="button" class="btn btn-outline-warning">Warning</button>
+  <button type="button" class="btn btn-outline-danger">Danger</button>
+  <button type="button" class="btn btn-outline-dark">Dark</button>
+  <button type="button" class="btn btn-outline-light text-dark">Light</button>
+</div>
+<br><br>
+<hr>
+<div class="container mt-3">
+  <h2>Block Level Buttons</h2>
+  <p>To create a block level button that spans the entire width of the parent element, use the .d-grid "helper" class on the parent element:</p>
+  <div class="d-grid">
+    <button type="button" class="btn btn-primary btn-block">Full-Width Button</button>
+  </div>
+</div>
+<br><br>
+<hr>
+<div class="container mt-3">
+  <h2>Button States</h2>
+  <button type="button" class="btn btn-primary">Primary Button</button>
+  <button type="button" class="btn btn-primary active">Active Primary</button>
+  <button type="button" class="btn btn-primary" disabled>Disabled Primary</button>
+  <a href="#" class="btn btn-primary disabled">Disabled Link</a>
+</div>
+<br><br>
+<hr>
+<div class="container mt-3">
+  <h2>Button Group</h2>
+  <p>The .btn-group class creates a button group:</p>
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">HTML</button>
+    <button type="button" class="btn btn-primary">CSS</button>
+    <button type="button" class="btn btn-primary">PYTHON</button>
+  </div>
+</div> 
+<br><br>
+<hr>
+<div class="container mt-3">
+  <h2>Button Groups Sizes</h2>
+  <p>Add class .btn-group-* to size all buttons in a button group.</p>
+  <h3>Large Buttons:</h3>
+  <div class="btn-group btn-group-lg">
+   <button type="button" class="btn btn-primary">HTML</button>
+    <button type="button" class="btn btn-primary">CSS</button>
+    <button type="button" class="btn btn-primary">PYTHON</button>
+  </div>
+  <hr>
+  <h3>Default Buttons:</h3>
+  <div class="btn-group">
+   <button type="button" class="btn btn-primary">HTML</button>
+    <button type="button" class="btn btn-primary">CSS</button>
+    <button type="button" class="btn btn-primary">PYTHON</button>
+  </div>
+  <hr>
+  <h3>Small Buttons:</h3>
+  <div class="btn-group btn-group-sm">
+    <button type="button" class="btn btn-primary">HTML</button>
+    <button type="button" class="btn btn-primary">CSS</button>
+    <button type="button" class="btn btn-primary">PYTHON</button>
+  </div>
+</div>
+<br><br>
+<hr>
+<div class="container mt-3">
+  <h2>Vertical Button Group</h2>
+  <p>Use the .btn-group-vertical class to create a vertical button group:</p>
+  <div class="btn-group-vertical">
+    <button type="button" class="btn btn-primary">Apple</button>
+    <button type="button" class="btn btn-primary">Samsung</button>
+    <button type="button" class="btn btn-primary">Sony</button>
+  </div>
+</div>
+<br><br>
+<hr>
+<div class="container">
+  <h2>Nesting Buttons andd dropdown menu</h2>
+  <div class="btn-group">
+     <button type="button" class="btn btn-primary">Juice</button>
+    <button type="button" class="btn btn-primary">Ice</button>
+	<div class="btn-group">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Milk Shakes
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Choclate</a></li>
+      <li><a href="#">Venilla</a></li>
+    </ul>
+  </div>
+  </div>
+ </div>
+ <br><br>
+ <hr>
+ <div class="container mt-3">
+  <h2>Alerts</h2>
+  <p>Alerts are created with the .alert class, followed by a contextual color classes:</p>
+  <div class="alert alert-success">
+    <strong>Success!</strong> This alert box could indicate a successful or positive action.
+  </div>
+  <div class="alert alert-info">
+    <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+  </div>
+  <div class="alert alert-warning">
+    <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+  </div>
+  <div class="alert alert-danger">
+    <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+  </div>
+  <div class="alert alert-primary">
+    <strong>Primary!</strong> Indicates an important action.
+  </div>
+  <div class="alert alert-secondary">
+    <strong>Secondary!</strong> Indicates a slightly less important action.
+  </div>
+  <div class="alert alert-dark">
+    <strong>Dark!</strong> Dark grey alert.
+  </div>
+  <div class="alert alert-light">
+    <strong>Light!</strong> Light grey alert.
+  </div>
+</div>
+<br><br>
+<hr>
+<div class="container mt-3">
+  <h2>Alert Links</h2>
+  <p>Add the alert-link class to any links inside the alert box to create "matching colored links".</p>
+  <div class="alert alert-success">
+    <strong>Success!</strong> You should <a href="#" class="alert-link">read this message</a>.
+  </div>
+  <div class="alert alert-info">
+    <strong>Info!</strong> You should <a href="#" class="alert-link">read this message</a>.
+  </div>
+  <div class="alert alert-warning">
+    <strong>Warning!</strong> You should <a href="#" class="alert-link">read this message</a>.
+  </div>
+  <div class="alert alert-danger">
+    <strong>Danger!</strong> You should <a href="#" class="alert-link">read this message</a>.
+  </div>
+  <div class="alert alert-primary">
+    <strong>Primary!</strong> You should <a href="#" class="alert-link">read this message</a>.
+  </div>
+  <div class="alert alert-secondary">
+    <strong>Secondary!</strong> You should <a href="#" class="alert-link">read this message</a>.
+  </div>
+  <div class="alert alert-dark">
+    <strong>Dark!</strong> You should <a href="#" class="alert-link">read this message</a>.
+  </div>
+  <div class="alert alert-light">
+    <strong>Light!</strong> You should <a href="#" class="alert-link">read this message</a>.
+  </div>
+</div>
+</div>
+<br><br>
+<hr>
+<div class="container">
+  <h2>Alerts Close</h2>
+  <p>The a element with class="close" and data-dismiss="alert" is used to close the alert box.</p>
+  <p>The alert-dismissible class adds some extra padding to the close button.</p>
+  <div class="alert alert-success alert-dismissible">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Success!</strong> This alert box could indicate a successful or positive action.
+  </div>
+  <div class="alert alert-info alert-dismissible">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+  </div>
+  <div class="alert alert-warning alert-dismissible">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+  </div>
+  <div class="alert alert-danger alert-dismissible">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+  </div>
+</div>
+<br><br>
+<hr>
+<div class="container">
+  <h2>Badges</h2>
+  <p>Badges are numerical indicators of how many items are associated with a link</p>
+  <a href="#">News <span class="badge">5</span></a><br>
+  <a href="#">Comments <span class="badge">10</span></a><br>
+  <a href="#">Updates <span class="badge">2</span></a>
+  <h2>Badges on Buttons</h2>
+  <button type="button" class="btn btn-primary">Primary <span class="badge">7</span></button>
+  <button type="button" class="btn btn-success">Success <span class="badge">3</span></button>    
+  <button type="button" class="btn btn-danger">Danger <span class="badge">5</span></button>        
+</div>
+<br><br>
+<hr>
+<div class="container">
+  <h2>Labels</h2>
+  <p>Labels are used to provide additional information about something</p>
+  <h1>Example <span class="label label-default">New</span></h1>
+  <h2>Example <span class="label label-default">New</span></h2>
+  <h3>Example <span class="label label-default">New</span></h3>
+  <h4>Example <span class="label label-default">New</span></h4>
+  <h5>Example <span class="label label-default">New</span></h5>
+  <h6>Example <span class="label label-default">New</span></h6>
+  <h2>Contextual Label Classes</h2>
+  <p>Contextual classes can be used to color the label.</p>  
+  <span class="label label-default">Default Label</span>
+  <span class="label label-primary">Primary Label</span>
+  <span class="label label-success">Success Label</span>
+  <span class="label label-info">Info Label</span>
+  <span class="label label-warning">Warning Label</span>
+  <span class="label label-danger">Danger Label</span>
+</div>
+<br><br>
+<hr>
+<div class="container">
+  <h2>Basic Progress Bar</h2>
+  <p>A progress bar can be used to show a user how far along he/she is in a process.Bootstrap provides several types of progress bars.
+    A default progress bar in Bootstrap looks like this:</p>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width:70%">
+    </div>
+  </div>
+  <h2>Progress Bar With Label</h2>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+      70%
+    </div>
+  </div>
+
+	<h2>Colored Progress Bars</h2>
+  <p>The contextual classes colors the progress bars:</p> 
+  <div class="progress">
+    <div class="progress-bar progress-bar-success" role="progressbar" style="width:40%">
+      40% Complete (success)
+    </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-info" role="progressbar" style="width:50%">
+      50% Complete (info)
+    </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-warning" role="progressbar" style="width:60%">
+      60% Complete (warning)
+    </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-danger" role="progressbar" style="width:70%">
+      70% Complete (danger)
+    </div>
+  </div>
+	<h2>Striped Progress Bars</h2>
+  <p>The .progress-bar-striped class adds stripes to the progress bars:</p> 
+  <div class="progress">
+    <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+      40% Complete (success)
+    </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+      50% Complete (info)
+    </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+      60% Complete (warning)
+    </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+      70% Complete (danger)
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

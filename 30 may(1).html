@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+<h2>Flex</h2>
+  <p>To create a flexbox container and transform direct children into flex items, use the d-flex class:</p>
+  <div class="d-flex p-3 bg-secondary text-white">  
+    <div class="p-2 bg-info">Flex item 1</div>
+    <div class="p-2 bg-warning">Flex item 2</div>
+    <div class="p-2 bg-primary">Flex item 3</div>
+  </div>
+ <h2>Horizontal Direction</h2>
+  <p>Use .flex-row to make the flex items appear side by side (default):</p>
+  <div class="d-flex flex-row bg-dark mb-3">
+    <div class="p-2 bg-info">Flex item 1</div>
+    <div class="p-2 bg-warning">Flex item 2</div>
+    <div class="p-2 bg-primary">Flex item 3</div>
+  </div>
+  <p>Use .flex-row-reverse to right-align the direction:</p>
+  <div class="d-flex flex-row-reverse bg-secondary">
+    <div class="p-2 bg-info">Flex item 1</div>
+    <div class="p-2 bg-warning">Flex item 2</div>
+    <div class="p-2 bg-primary">Flex item 3</div>
+  </div>
+  <h2>Vertical Direction</h2>
+  <p>Use .flex-column to display the flex items vertically (on top of each other):</p>
+  <div class="d-flex flex-column mb-3">
+    <div class="p-2 bg-info">Flex item 1</div>
+    <div class="p-2 bg-warning">Flex item 2</div>
+    <div class="p-2 bg-primary">Flex item 3</div>
+  </div>
+  <p>Use .flex-column-reverse to reverse the vertical direction:</p>
+  <div class="d-flex flex-column-reverse">
+    <div class="p-2 bg-info">Flex item 1 flex-column-reverse</div>
+    <div class="p-2 bg-warning">Flex item 2</div>
+    <div class="p-2 bg-primary">Flex item 3</div>
+  </div>
+  <h2>Justify content</h2>
+  <p>Use the .justify-content-* classes to change the alignment of flex items. Choose from start (default), end, center, between or around:</p>
+  <div class="d-flex justify-content-start bg-secondary mb-3">
+    <div class="p-2 bg-info">Flex item 1 justify-content-start </div>
+    <div class="p-2 bg-warning">Flex item 2</div>
+    <div class="p-2 bg-primary">Flex item 3</div>
+  </div>
+  <div class="d-flex justify-content-end bg-secondary mb-3">
+    <div class="p-2 bg-info">Flex item 1 justify-content-end</div>
+    <div class="p-2 bg-warning">Flex item 2</div>
+    <div class="p-2 bg-primary">Flex item 3</div>
+  </div>
+  <div class="d-flex justify-content-center bg-secondary mb-3">
+    <div class="p-2 bg-info">Flex item 1 justify-content-center</div>
+    <div class="p-2 bg-warning">Flex item 2</div>
+    <div class="p-2 bg-primary">Flex item 3</div>
+  </div>
+  <div class="d-flex justify-content-between bg-secondary mb-3">
+    <div class="p-2 bg-info">Flex item 1 justify-content-between</div>
+    <div class="p-2 bg-warning">Flex item 2</div>
+    <div class="p-2 bg-primary">Flex item 3</div>
+  </div>
+  <div class="d-flex justify-content-around bg-secondary mb-3">
+    <div class="p-2 bg-info">Flex item 1 justify-content-around</div>
+    <div class="p-2 bg-warning">Flex item 2</div>
+    <div class="p-2 bg-primary">Flex item 3</div>
+  </div>
+  <h2>Align Content</h2>
+  <p>Control the vertical alignment of gathered flex items with the .align-content-* classes.</p>
+  <p><strong>Note:</strong> This example does not look good on a small devices. Also note that these classes have no effect on single rows of flex items.</p>
+  <p>.align-content-start (default):</p>
+  <div class="d-flex flex-wrap align-content-start bg-success" style="height:150px">
+    <div class="p-2 border">Flex item 1</div>
+    <div class="p-2 border">Flex item 2</div>
+    <div class="p-2 border">Flex item 3</div>
+    <div class="p-2 border">Flex item 4</div>
+    <div class="p-2 border">Flex item 5</div>
+   
+  </div>
+  <br>
+  <p>.align-content-end:</p>
+  <div class="d-flex flex-wrap align-content-end bg-success" style="height:150px">
+    <div class="p-2 border">Flex item 1</div>
+    <div class="p-2 border">Flex item 2</div>
+    <div class="p-2 border">Flex item 3</div>
+    <div class="p-2 border">Flex item 4</div>
+    <div class="p-2 border">Flex item 5</div>
+    
+  </div>
+  <br>
+  <p>.align-content-center:</p>
+  <div class="d-flex flex-wrap align-content-center bg-success" style="height:150px">
+    <div class="p-2 border">Flex item 1</div>
+    <div class="p-2 border">Flex item 2</div>
+    <div class="p-2 border">Flex item 3</div>
+    <div class="p-2 border">Flex item 4</div>
+    <div class="p-2 border">Flex item 5</div>
+  </div>
+  <br>
+  <p>.align-content-around:</p>
+  <div class="d-flex flex-wrap align-content-around bg-success" style="height:150px">
+    <div class="p-2 border">Flex item 1</div>
+    <div class="p-2 border">Flex item 2</div>
+    <div class="p-2 border">Flex item 3</div>
+    <div class="p-2 border">Flex item 4</div>
+    <div class="p-2 border">Flex item 5</div>
+  </div>
+  <br>
+  <p>.align-content-stretch:</p>
+  <div class="d-flex flex-wrap align-content-stretch bg-success" style="height:100px">
+    <div class="p-2 border">Flex item 1</div>
+    <div class="p-2 border">Flex item 2</div>
+    <div class="p-2 border">Flex item 3</div>
+    <div class="p-2 border">Flex item 4</div>
+    <div class="p-2 border">Flex item 5</div>
+  </div>
+  <br>
+ <h2>Wrap</h2>
+<p>Control how flex items wrap in a flex container with <code>flex-nowrap</code> (default), <code>flex-wrap</code>, or <code>flex-wrap-reverse</code>.</p>
+
+<p><strong>flex-wrap</strong></p>
+<div class="d-flex flex-wrap bg-light border mb-3" style="max-width: 400px;">
+  <div class="p-2 border">Flex item 1</div>
+  <div class="p-2 border">Flex item 2</div>
+  <div class="p-2 border">Flex item 3</div>
+  <div class="p-2 border">Flex item 4</div>
+  <div class="p-2 border">Flex item 5</div>
+</div>
+
+<p><strong>flex-wrap-reverse</strong></p>
+<div class="d-flex flex-wrap-reverse bg-light border mb-3" style="max-width: 400px;">
+  <div class="p-2 border">Flex item 1</div>
+  <div class="p-2 border">Flex item 2</div>
+  <div class="p-2 border">Flex item 3</div>
+  <div class="p-2 border">Flex item 4</div>
+  <div class="p-2 border">Flex item 5</div>
+</div>
+
+<p><strong>flex-nowrap</strong></p>
+<div class="d-flex flex-nowrap bg-light border" style="max-width: 400px;">
+  <div class="p-2 border">Flex item 1</div>
+  <div class="p-2 border">Flex item 2</div>
+  <div class="p-2 border">Flex item 3</div>
+  <div class="p-2 border">Flex item 4</div>
+  <div class="p-2 border">Flex item 5</div>
+</div>
+<br><br>
+<hr>
+<button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#mod">Click to open!!</button>
+<div id="mod" class="modal fade" role="dialog">
+	<div class="modal-dialog bg-light modal-lg">
+		<div class="model-content">
+			<div class="modal-header">
+				
+				<h3 class="modal-title">Modal Example</h3>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+			<div class="modal-body">
+			<p>The class that is used here is modal-body</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+			</div>
+		</div>
+	</div>
+</div>
+				
+</div>
+</body>
+</html>
